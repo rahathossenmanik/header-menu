@@ -1,7 +1,7 @@
 {
-  "name": "topbar-sidebar-menu",
+  "name": "header-menu",
   "version": "0.1.0",
-  "description": "Topbar and SideBar Menu with Reactstrap and Bootstrap",
+  "description": "Header Menu with Reactstrap and Bootstrap",
   "author": "Manik Hosen",
   "private": true,
   "dependencies": {

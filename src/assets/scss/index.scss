@@ -17,33 +17,6 @@ a:focus {
   transition: all 0.3s;
 }
 
-/* ---------------------------------------------------
-    SIDEBAR STYLE
------------------------------------------------------ */
-.sidebar {
-  min-width: 250px;
-  max-width: 250px;
-  background: #175c8d;
-  color: #fff;
-  margin-left: -250px;
-  transition: all 0.5s;
-}
-
-.sidebar.is-open {
-  margin-left: 0;
-  transition: 0.5s;
-}
-
-.sidebar-header {
-  color: #fff;
-  padding: 1em;
-}
-
-.sidebar ul p {
-  color: #fff;
-  padding: 10px;
-}
-
 .menu-open {
   background: #175c8d;
 }
@@ -65,32 +38,6 @@ li a.dropdown-toggle::after {
   top: 10%;
 }
 
-.sidebar-header > span {
-  position: relative;
-  float: right;
-  margin: 0.5em;
-  font-size: 2rem;
-  cursor: pointer;
-  display: none;
-}
-.side-menu {
-  height: calc(100vh - 130px);
-  overflow-y: scroll;
-}
-
-.side-menu::-webkit-scrollbar {
-  width: 10px;
-}
-
-.side-menu::-webkit-scrollbar-thumb {
-  background: #175c8d;
-  border-radius: 3px;
-}
-
-.side-menu::-webkit-scrollbar-thumb:hover {
-  background: #175c8d;
-}
-
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
@@ -109,17 +56,6 @@ li a.dropdown-toggle::after {
     margin-left: 100%;
   }
 
-  .sidebar.is-open {
-    min-width: 100%;
-    max-width: 100%;
-    margin-left: 0;
-    transition: all 0.5s, height 0s;
-  }
-
-  .sidebar.is-open > .sidebar-header span {
-    display: unset;
-  }
-
   li a.dropdown-toggle::after {
     display: inline-block;
     position: relative;
@@ -129,14 +65,4 @@ li a.dropdown-toggle::after {
 
 .container {
   max-width: 100% !important;
-}
-
-.sidebar .nav-link {
-  color: #fff !important;
-}
-
-.sidebar .nav-link:hover,
-.sidebar .nav-link:focus {
-  color: #175c8d !important;
-  background-color: #fff !important;
 }

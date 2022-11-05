@@ -18,7 +18,7 @@ import {
 import { Link } from "react-router-dom";
 import IssueFreek from "./../../assets/images/if-color.png";
 
-const Topbar = ({ toggleSidebar }) => {
+const Topbar = () => {
   const [topbarIsOpen, setTopbarOpen] = useState(true);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -41,14 +41,11 @@ const Topbar = ({ toggleSidebar }) => {
       className="navbar shadow-sm p-3 bg-white rounded"
       expand="sm"
     >
-      <Button color="info" onClick={toggleSidebar}>
-        <FontAwesomeIcon icon={faBarsStaggered} />
-      </Button>
       <img
         src={IssueFreek}
         alt="IssueFreek Logo"
-        style={{ display: windowWidth <= 768 ? "block" : "none", width: 150 }}
-        className="ms-2 mt-1"
+        style={{ width: 150 }}
+        className="mt-1 me-2"
       />
       <NavbarToggler onClick={toggleTopbar} />
       <Collapse isOpen={topbarIsOpen} navbar>
